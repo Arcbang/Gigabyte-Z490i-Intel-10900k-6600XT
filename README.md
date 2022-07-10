@@ -2,7 +2,8 @@
 在基于技嘉Z490I AORUS ULTRA、Intel 10700k的平台上安装 MacOS Monterey
 - 更新到 OC 0.8.2，支持 Mac OS Monterey
 - 驱动更新到最新版本理论支持macOS Ventura（尚未安装测试）
-- 网卡采用DW1560+转接板方案
+- 网卡采用DW1560+转接板方案,转接板蓝牙连接到主板USB2.0接口
+- 本方案中使用iGPU为计算加速，不用作画面输出。
 
 ## 整机硬件
 
@@ -28,7 +29,7 @@
 - 关闭『CSM』
 - 集成显卡『开启』（而非自动）
 - 其它默认 
-## 安装步骤(懒人版安装)
+## 安装u盘制作步骤(懒人版)
 
 - 制作启动盘
   - 微信搜索`黑果小冰的部落阁`并关注，菜单选择“安装镜像”，选择需要的版本，滑到推文最后，点击'喜欢作者'对作者进行打赏（最低是2CNY），就能获得下载链接；
@@ -38,7 +39,7 @@
   - Windows下安装`DiskGenius`,找到U盘中放置OC的分区，强制删除所有文件，并将我的EFI解压后拖拽拷贝进去；
   - 至此安装U盘制作完成
 
-## 安装步骤(纯净版安装)
+## 安装u盘制作步骤(纯净版)
 
 为保证系统原始性，以下操作在白苹果上进行。
 
@@ -62,3 +63,13 @@
   - 在EFI分区中，找到U盘并点击『挂载分区』--『打开分区』
   - 将本项目中 **EFI** 目录拷贝至新打开的 **EFI分区中**
   - 至此安装U盘制作完成
+
+## 相关链接
+
+- [Gigabyte-Z490i-Intel-10700k-5700XT](https://github.com/sbfkcel/Gigabyte-Z490i-Intel-10700k-5700XT)
+- [Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D](https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D)
+- [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)
+- [OpenCore Configurator](https://mackie100projects.altervista.org/)
+- [Hackintool](https://github.com/headkaze/Hackintool)
+- [Intel核显platform ID整理及smbios速查表](https://blog.daliansky.net/Intel-core-display-platformID-finishing.html)
+- [Getting started with OpenCore](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html)
